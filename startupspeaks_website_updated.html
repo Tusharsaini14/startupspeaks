@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Startup Speaks — We Build Products That Scale</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0A0A0C;
+  --bg2:#111116;
+  --bg3:#18181F;
+  --accent:#C8FF00;
+  --accent2:#8B5CF6;
+  --text:#F0EFE9;
+  --muted:#888880;
+  --border:rgba(255,255,255,0.08);
+  --card:rgba(255,255,255,0.04);
+  --radius:14px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Syne',sans-serif;line-height:1.15}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,12,0.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.logo{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;letter-spacing:-0.5px;color:var(--text)}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:0.9rem;font-weight:400;transition:color 0.2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:var(--accent);color:#0A0A0C;padding:0.55rem 1.3rem;border-radius:100px;font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:700;text-decoration:none;transition:opacity 0.2s}
+.nav-cta:hover{opacity:0.85}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:10rem 2.5rem 6rem;position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-glow{position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(200,255,0,0.07) 0%,transparent 70%);pointer-events:none}
+.hero-glow2{position:absolute;bottom:-300px;left:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(139,92,246,0.08) 0%,transparent 70%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;border:1px solid var(--border);border-radius:100px;padding:0.4rem 1rem;font-size:0.8rem;color:var(--muted);margin-bottom:2rem}
+.badge-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.hero h1{font-size:clamp(3rem,7vw,6.5rem);font-weight:800;letter-spacing:-2px;line-height:1.0;max-width:900px;margin-bottom:1.5rem}
+.hero h1 .line2{color:var(--accent)}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:520px;margin-bottom:2.5rem;font-weight:300}
+.hero-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.btn-primary{background:var(--accent);color:#0A0A0C;padding:0.85rem 2rem;border-radius:100px;font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;text-decoration:none;transition:opacity 0.2s}
+.btn-primary:hover{opacity:0.85}
+.hero-stats{display:flex;gap:3rem;margin-top:5rem;padding-top:3rem;border-top:1px solid var(--border)}
+.stat-num{font-family:'Syne',sans-serif;font-size:2.2rem;font-weight:800;color:var(--text)}
+.stat-label{font-size:0.82rem;color:var(--muted);margin-top:0.2rem}
+
+/* SERVICES */
+.services{background:var(--bg2)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5px;margin-top:4rem;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.service-card{background:var(--bg2);padding:2.5rem;border-right:1.5px solid var(--border);border-bottom:1.5px solid var(--border);transition:background 0.25s}
+.service-card:hover{background:var(--bg3)}
+.service-icon{width:48px;height:48px;border-radius:12px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:1.3rem}
+.service-card h3{font-size:1.15rem;font-weight:700;margin-bottom:0.75rem;letter-spacing:-0.3px}
+.service-card p{font-size:0.9rem;color:var(--muted);line-height:1.7;font-weight:300}
+.service-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.25rem}
+.tag{font-size:0.72rem;padding:0.3rem 0.7rem;border-radius:100px;border:1px solid var(--border);color:var(--muted);font-family:'Syne',sans-serif;font-weight:600;letter-spacing:0.3px}
+
+/* ABOUT */
+.about{background:var(--bg2)}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.about-left h2{font-size:clamp(2rem,3.5vw,3rem);font-weight:800;letter-spacing:-1px;margin-bottom:1.5rem}
+.about-left p{color:var(--muted);font-weight:300;margin-bottom:1.25rem;font-size:0.98rem}
+.founder-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-top:2rem}
+.founder-top{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem}
+.founder-avatar{width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#C8FF00,#8B5CF6);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:#0A0A0C}
+.founder-name{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:0.15rem}
+.founder-role{font-size:0.8rem;color:var(--muted)}
+.founder-quote{font-size:0.9rem;color:var(--muted);font-style:italic;line-height:1.7;font-weight:300}
+.about-right{display:flex;flex-direction:column;gap:1.25rem}
+.about-stat{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem 2rem;transition:border-color 0.2s}
+.about-stat:hover{border-color:rgba(200,255,0,0.25)}
+.about-stat-num{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;color:var(--accent);margin-bottom:0.3rem}
+.about-stat-label{font-size:0.88rem;color:var(--muted);font-weight:300}
+
+/* CONTACT */
+section{padding:7rem 2.5rem}
+.section-tag{font-size:0.75rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;font-family:'Syne',sans-serif;display:block}
+#contact{background:var(--bg);text-align:center;display:flex;flex-direction:column;align-items:center}
+.contact-inner{max-width:800px;width:100%}
+.contact-inner h2{font-size:clamp(2.5rem,5vw,3.5rem);font-weight:800;letter-spacing:-1px;margin-bottom:1.5rem}
+.contact-inner p{color:var(--muted);font-weight:300;margin:0 auto 3rem;font-size:1.1rem;max-width:600px}
+.contact-links{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:1.5rem;justify-content:center}
+.contact-link{display:flex;align-items:center;gap:1.25rem;padding:1.5rem;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color 0.2s,transform 0.2s}
+.contact-link:hover{border-color:rgba(200,255,0,0.4);transform:translateY(-4px)}
+.cl-icon{width:48px;height:48px;border-radius:12px;background:var(--card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.cl-text{text-align:left}
+.cl-label{font-size:0.75rem;color:var(--muted);font-weight:400;margin-bottom:0.15rem;text-transform:uppercase;letter-spacing:1px}
+.cl-value{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:3rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem}
+.foot-logo{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800}
+.foot-logo span{color:var(--accent)}
+.foot-copy{font-size:0.82rem;color:var(--muted)}
+.foot-links{display:flex;gap:1.5rem}
+.foot-links a{font-size:0.82rem;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.foot-links a:hover{color:var(--text)}
+
+@media(max-width:768px){
+  nav{padding:1rem 1.25rem}
+  .nav-links{display:none}
+  .hero{padding:8rem 1.25rem 4rem}
+  .hero-stats{flex-wrap:wrap;gap:2rem}
+  section{padding:5rem 1.25rem}
+  .about-inner{grid-template-columns:1fr;gap:3rem}
+  .contact-links{grid-template-columns:1fr}
+  footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Startup<span>Speaks</span></div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Connect</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Connect Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-badge">
+    <span class="badge-dot"></span>
+    Available for new projects
+  </div>
+  <h1>We Build Products<br><span class="line2">That Scale.</span></h1>
+  <p>From MVP to a million users — Startup Speaks is the engineering partner startups trust to ship fast, build right, and grow without breaking.</p>
+  <div class="hero-actions">
+    <a href="#contact" class="btn-primary">Connect with us →</a>
+  </div>
+  <div class="hero-stats">
+    <div>
+      <div class="stat-num">1M+</div>
+      <div class="stat-label">Users reach in production</div>
+    </div>
+    <div>
+      <div class="stat-num">~100</div>
+      <div class="stat-label">Production releases delivered</div>
+    </div>
+    <div>
+      <div class="stat-num">6yrs</div>
+      <div class="stat-label">In production Android dev</div>
+    </div>
+    <div>
+      <div class="stat-num">4.5★</div>
+      <div class="stat-label">Average Play Store rating</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES (FULL RESTORATION) -->
+<section class="services" id="services">
+  <div class="section-tag">Expertise</div>
+  <h2 class="section-title">Full-Stack Product Engineering</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">📱</div>
+      <h3>Android Development</h3>
+      <p>Performance-first native apps with &lt;1s cold start times and zero-leak memory management.</p>
+      <div class="service-tags"><span class="tag">Kotlin</span><span class="tag">Coroutines</span><span class="tag">Jetpack</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">⚡</div>
+      <h3>Real-Time Systems</h3>
+      <p>Low-latency audio/video and chat systems battle-tested for 1M+ concurrent users.</p>
+      <div class="service-tags"><span class="tag">Agora</span><span class="tag">WebRTC</span><span class="tag">WebSockets</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🌐</div>
+      <h3>Web Development</h3>
+      <p>High-performance web platforms built with clean architecture and modern frameworks.</p>
+      <div class="service-tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🚀</div>
+      <h3>MVP Development</h3>
+      <p>Moving from wireframes to live products at startup speed without cutting engineering corners.</p>
+      <div class="service-tags"><span class="tag">Fast Delivery</span><span class="tag">Scalable</span><span class="tag">Clean Arch</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔌</div>
+      <h3>API & SDK Integration</h3>
+      <p>Seamless implementation of third-party payment, analytics, and social infrastructure.</p>
+      <div class="service-tags"><span class="tag">Razorpay</span><span class="tag">Stripe</span><span class="tag">Firebase</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏗️</div>
+      <h3>Tech Consulting</h3>
+      <p>Architecture reviews, performance audits, and strategy for growing engineering teams.</p>
+      <div class="service-tags"><span class="tag">Code Audit</span><span class="tag">MVVM</span><span class="tag">Cloud Strat</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-left">
+      <div class="section-tag">Founder</div>
+      <h2>Engineered for Founders.</h2>
+      <p>Startup Speaks exists to give early-stage founders access to high-end engineering expertise without the cost of a full-time senior hire.</p>
+      <div class="founder-card">
+        <div class="founder-top">
+          <div class="founder-avatar">TS</div>
+          <div>
+            <div class="founder-name">Tushar Saini</div>
+            <div class="founder-role">Founder · Android Engineer</div>
+          </div>
+        </div>
+        <div class="founder-quote">"We don't just ship code; we ship products that are ready for the next million users."</div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-stat"><div class="about-stat-num">1M+</div><div class="about-stat-label">Production Users Reach</div></div>
+      <div class="about-stat"><div class="about-stat-num">~100</div><div class="about-stat-label">Releases Delivered</div></div>
+      <div class="about-stat"><div class="about-stat-num">6 yrs</div><div class="about-stat-label">Core Android Engineering</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LET'S BUILD -->
+<section id="contact">
+  <span class="section-tag">Let's Build</span>
+  <div class="contact-inner">
+    <h2>Ready to Scale?</h2>
+    <p>Follow our journey and connect with us on social media for technical insights and project updates.</p>
+    <div class="contact-links">
+      <a href="https://instagram.com/startupspeaks.official" class="contact-link" target="_blank">
+        <div class="cl-icon">📸</div>
+        <div class="cl-text">
+          <div class="cl-label">Instagram</div>
+          <div class="cl-value">@startupspeaks.official</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/company/startup-speaks-official/" class="contact-link" target="_blank">
+        <div class="cl-icon">🔗</div>
+        <div class="cl-text">
+          <div class="cl-label">LinkedIn</div>
+          <div class="cl-value">Startup Speaks Official</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo">Startup<span>Speaks</span></div>
+  <div class="foot-copy">© 2026 Startup Speaks. Built for Performance.</div>
+  <div class="foot-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Connect</a>
+  </div>
+</footer>
+
+</body>
+</html>
