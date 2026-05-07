@@ -103,6 +103,16 @@ section{padding:7rem 2.5rem}
 .cl-label{font-size:0.75rem;color:var(--muted);font-weight:400;margin-bottom:0.15rem;text-transform:uppercase;letter-spacing:1px}
 .cl-value{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700}
 
+/* QR CARD */
+.qr-card{display:flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:2.5rem;padding:2rem 2.5rem;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);max-width:800px;width:100%;text-align:left;transition:border-color 0.2s}
+.qr-card:hover{border-color:rgba(200,255,0,0.3)}
+.qr-card-left{flex:1}
+.qr-title{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;margin-bottom:0.5rem;color:var(--text)}
+.qr-sub{font-size:0.88rem;color:var(--muted);font-weight:300;line-height:1.65;margin-bottom:0.75rem;max-width:420px}
+.qr-url{font-family:'Syne',sans-serif;font-size:0.82rem;font-weight:700;color:var(--accent);letter-spacing:0.3px}
+.qr-card-right{flex-shrink:0;padding:10px;background:var(--bg2);border:1px solid var(--border);border-radius:12px}
+@media(max-width:768px){.qr-card{flex-direction:column;align-items:flex-start}.qr-card-right{align-self:center}}
+
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:3rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem}
 .foot-logo{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800}
@@ -261,6 +271,25 @@ footer{border-top:1px solid var(--border);padding:3rem 2.5rem;display:flex;align
           <div class="cl-value">Startup Speaks Official</div>
         </div>
       </a>
+      <a href="https://linktr.ee/startupspeaks" class="contact-link" target="_blank">
+        <div class="cl-icon">🌿</div>
+        <div class="cl-text">
+          <div class="cl-label">Linktree · Book a Consultation</div>
+          <div class="cl-value">linktr.ee/startupspeaks</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- QR Card -->
+    <div class="qr-card">
+      <div class="qr-card-left">
+        <div class="qr-title">Scan to Connect</div>
+        <div class="qr-sub">Point your camera at the QR code to visit our Linktree — book a free consultation, follow us, or explore our work.</div>
+        <div class="qr-url">linktr.ee/startupspeaks</div>
+      </div>
+      <div class="qr-card-right">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://linktr.ee/startupspeaks&bgcolor=111116&color=C8FF00&qzone=2&format=png" alt="QR Code for linktr.ee/startupspeaks" width="130" height="130" style="border-radius:10px;display:block"/>
+      </div>
     </div>
   </div>
 </section>
