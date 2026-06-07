@@ -1,0 +1,80 @@
+:root,
+[data-theme="light"] {
+  --bg: #fbf9f9;
+  --surface: #fbf9f9;
+  --surface-container: #efeded;
+  --surface-container-low: #f5f3f3;
+  --text: #1b1c1c;
+  --text-secondary: #5f5e5e;
+  --text-muted: #5f5e5e;
+  --accent: #e60000;
+  --accent-soft: #b70100;
+  --accent-tint: #ffdad4;
+  --on-accent: #ffffff;
+  --border: #946e68;
+  --border-subtle: #e9bcb5;
+  --nav-bg: rgba(251, 249, 249, 0.92);
+  --hero-line: #1b1c1c;
+  --stat-num: #1b1c1c;
+  --thumb-1: #2a0a0a;
+  --thumb-2: #1a1510;
+  --thumb-3: #1f1410;
+  --font-display: "Syne", system-ui, sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, sans-serif;
+  --font-label: "Hanken Grotesk", system-ui, sans-serif;
+  --container-max: 1440px;
+  --margin-desktop: 64px;
+  --margin-mobile: 16px;
+  --gutter: 24px;
+  --space-unit: 8px;
+  --focus-ring: #e60000;
+  --radius: 0;
+}
+
+[data-theme="dark"] {
+  --bg: #131313;
+  --surface: #131313;
+  --surface-container: #20201f;
+  --surface-container-low: #1c1b1b;
+  --text: #e5e2e1;
+  --text-secondary: #c6c6c6;
+  --text-muted: #c6c6c6;
+  --accent: #e60000;
+  --accent-soft: #ffb4a8;
+  --accent-tint: #ffb4a8;
+  --on-accent: #ffffff;
+  --border: #b08781;
+  --border-subtle: #5f3f3a;
+  --nav-bg: rgba(19, 19, 19, 0.92);
+  --hero-line: #e5e2e1;
+  --stat-num: #e5e2e1;
+  --thumb-1: #2a1010;
+  --thumb-2: #102018;
+  --thumb-3: #201810;
+  --font-label: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131313;
+    --surface: #131313;
+    --surface-container: #20201f;
+    --surface-container-low: #1c1b1b;
+    --text: #e5e2e1;
+    --text-secondary: #c6c6c6;
+    --text-muted: #c6c6c6;
+    --accent: #e60000;
+    --accent-soft: #ffb4a8;
+    --accent-tint: #ffb4a8;
+    --on-accent: #ffffff;
+    --border: #b08781;
+    --border-subtle: #5f3f3a;
+    --nav-bg: rgba(19, 19, 19, 0.92);
+    --hero-line: #e5e2e1;
+    --stat-num: #e5e2e1;
+    --thumb-1: #2a1010;
+    --thumb-2: #102018;
+    --thumb-3: #201810;
+    --font-label: "JetBrains Mono", ui-monospace, monospace;
+  }
+}

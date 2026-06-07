@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Startup Speaks">
+  <rect x="10" y="8" width="84" height="84" fill="#e60000"/>
+  <polygon points="34,88 18,112 50,88" fill="#e60000"/>
+  <text x="52" y="62" font-family="Syne, sans-serif" font-weight="800" font-size="48" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">S</text>
+</svg>
