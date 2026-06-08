@@ -57,6 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
     revealEls.forEach(function (el) { el.classList.add("is-visible"); });
   }
 
+  document.querySelectorAll("[data-chip]").forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      document.querySelectorAll("[data-chip]").forEach(function (c) {
+        c.classList.remove("is-active");
+      });
+      chip.classList.add("is-active");
+    });
+  });
+
   var qrImg = document.querySelector("[data-qr-img]");
   if (qrImg) {
     function updateQr() {

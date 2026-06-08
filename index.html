@@ -27,7 +27,8 @@
   <title>Startup Speaks — We Build Products That Scale</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5RK6MMP61"></script>
@@ -42,7 +43,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="#home">
-        <img src="assets/img/logo-mark.svg" width="36" height="36" alt="" />
+        <img src="assets/img/logo-mark.svg" width="32" height="32" alt="" />
         Startup<span>Speaks</span>
       </a>
       <nav class="nav-desktop" aria-label="Primary">
@@ -69,77 +70,413 @@
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="container hero__grid reveal">
-        <div>
-          <div class="hero__badge"><span class="hero__badge-dot" aria-hidden="true"></span> Available for new projects</div>
-          <h1 class="hero__title">We Build Products<em>That Scale.</em></h1>
-          <p>From MVP to a million users — Startup Speaks is the engineering partner startups trust to ship fast, build right, and grow without breaking.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#connect">Connect with us →</a>
+    <!-- HOME -->
+    <section id="home">
+      <!-- Noir hero -->
+      <div class="home-hero-noir theme-dark-only">
+        <div class="home-hero-noir__bg" aria-hidden="true">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRSKTrZq3Ye-wprdNtZ4T2mGkj5F0tZBm5d43AramZibRsRqgYL178yW5mkpubkAJqnpKb3AyXq2iVOhXFoWVNYCEDOGCSzqRCYrSO3Os5V2I7btep2j-AfpLw1VGXkZjB1E7gFTt7HottrlUFlxFHS-h51c3rw7qXsrcAZPm6vVhYeE-EZRBjA28Iq_PYjRNtyVdiKUsoHC4Se9ol19aC059fXORv9BwKHoxbivIXaotkehwdvUA_v0wk9eSslMYmDTqX_vmiztKZ" alt="" />
+        </div>
+        <div class="container home-hero-noir__content reveal">
+          <div class="home-hero-noir__eyebrow">
+            <span aria-hidden="true"></span>
+            <span class="label">The Authority in Innovation</span>
+          </div>
+          <h1 class="display">We Build Products <em>That Scale.</em></h1>
+          <p class="body-lg">From MVP to a million users — Startup Speaks is the engineering partner startups trust to ship fast, build right, and grow without breaking.</p>
+          <div class="home-hero-noir__actions">
+            <a class="btn btn--primary" href="#connect">Connect with us <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
             <a class="btn btn--ghost" href="#work">View our work</a>
           </div>
         </div>
-        <div class="hero__stats" aria-label="Key metrics">
-          <div class="hero__stat"><strong>1M+</strong><span>Users reach in production</span></div>
-          <div class="hero__stat"><strong>~100</strong><span>Production releases delivered</span></div>
-          <div class="hero__stat"><strong>6yrs</strong><span>In production Android dev</span></div>
-          <div class="hero__stat"><strong>4.5★</strong><span>Average Play Store rating</span></div>
+      </div>
+
+      <!-- Editorial hero -->
+      <div class="home-hero-editorial theme-light-only">
+        <div class="container">
+          <div class="home-hero-editorial__grid reveal">
+            <div>
+              <span class="label">Premium Product Engineering</span>
+              <h1 class="display" style="margin-top:1.5rem">Engineering <em>Digital Superiority</em> For Modern Ventures.</h1>
+              <p class="body-lg" style="max-width:36rem;margin-top:1.5rem">Full-stack product engineering for ambitious founders — Android, real-time systems, and MVPs built to scale from day one.</p>
+              <div style="margin-top:2rem">
+                <a class="btn btn--inverse" href="#expertise">Explore Capabilities</a>
+              </div>
+            </div>
+            <div class="home-hero-editorial__visual">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIV7eBN1HMM78g9pESprPZASlYIfw9pg0gFFhZgxuCx69O7JUzAFBJ3PNB91hvirG3ssQtkEccTj73jg3JrKuTU9XRtS1CQZy-YpCnynwe9NY0zWZsS7XsgQ7XyBtqAnosp3Ko7Um_GVMWSwc073S0ySSrso1vyu3NHfaDk0RzB44zFnO6iaHrZpT7hagUHfdbRWDfeovvIn1VlZJVBZLEgflYF1vxO6h_FqyN0YIL5W1UWUlRZlUv0BfFU9uJ-7_4POV2OBsiqgtM" alt="Editorial architectural visual" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noir stats -->
+      <div class="stats-noir theme-dark-only">
+        <div class="container stats-noir__grid reveal">
+          <div class="stat-card-noir">
+            <span class="material-symbols-outlined" aria-hidden="true">rocket_launch</span>
+            <strong>1M+</strong>
+            <span>Users in Production</span>
+          </div>
+          <div class="stat-card-noir">
+            <span class="material-symbols-outlined" aria-hidden="true">shield</span>
+            <strong>~100</strong>
+            <span>Production Releases</span>
+          </div>
+          <div class="stat-card-noir">
+            <span class="material-symbols-outlined" aria-hidden="true">monitoring</span>
+            <strong>4.5★</strong>
+            <span>Average Play Store Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial stats -->
+      <div class="stats-editorial theme-light-only">
+        <div class="container">
+          <div class="stats-editorial__bar reveal">
+            <div class="stats-editorial__cell"><strong>1M+</strong><span>Users Shipped</span></div>
+            <div class="stats-editorial__cell"><strong>~100</strong><span>Production Releases</span></div>
+            <div class="stats-editorial__cell"><strong>6 yrs</strong><span>Android Engineering</span></div>
+            <div class="stats-editorial__cell"><strong>4.5★</strong><span>Play Store Rating</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noir asymmetric preview -->
+      <div class="home-preview-noir theme-dark-only">
+        <div class="container home-preview-noir__grid reveal">
+          <div class="home-preview-noir__sticky">
+            <h2 class="headline-lg">Architecting the<br /><span class="home-preview-noir__stroke">Digital Frontier</span></h2>
+            <div class="home-preview-noir__list">
+              <div class="home-preview-noir__item">
+                <div class="home-preview-noir__item-head">
+                  <span class="home-preview-noir__num">01</span>
+                  <h3 class="headline-md">Android Development</h3>
+                </div>
+                <p>Performance-first native apps with &lt;1s cold start times and zero-leak memory management.</p>
+              </div>
+              <div class="home-preview-noir__item">
+                <div class="home-preview-noir__item-head">
+                  <span class="home-preview-noir__num">02</span>
+                  <h3 class="headline-md">Real-Time Systems</h3>
+                </div>
+                <p>Low-latency audio/video and chat systems battle-tested for 1M+ concurrent users.</p>
+              </div>
+              <div class="home-preview-noir__item">
+                <div class="home-preview-noir__item-head">
+                  <span class="home-preview-noir__num">03</span>
+                  <h3 class="headline-md">MVP Development</h3>
+                </div>
+                <p>Moving from wireframes to live products at startup speed without cutting engineering corners.</p>
+              </div>
+            </div>
+          </div>
+          <div class="home-preview-noir__visual">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu7b3b21gO7NzssXffN-Dqgo_RbZCaSROg5zs4M7SKJN0dGTXTjBCCrfFyf2729aug3-9Ga6DsHcVCkUsWUcwOpgvAIOZytENnaGRcwNQt9kcmVD3wuWXPiYKFK_z8U7XKfDMThRexUNTuvAGTH8ClG0KFGquK5PklWZRLEPgVqZaYmOyCaCbZ0YHj2-GMiRbJ-YsnLj-5NqxGSe1YIRkfYsCfOYo1C2L_Cj5HtThxFzgBIM9InisGNIyxI6n_kU_vSKFndLXEnNJx" alt="Production engineering visual" />
+            <div class="home-preview-noir__caption">
+              <span class="label">Latest Project</span>
+              <p style="margin:0.5rem 0 0;font-size:0.9rem">Suvich — live astrology platform scaled to 1M+ installs with bi-weekly production releases.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial bento preview -->
+      <div class="home-bento-editorial theme-light-only">
+        <div class="container reveal">
+          <div class="home-bento-editorial__head">
+            <div>
+              <h2 class="headline-lg">Strategic Solutions</h2>
+              <p>Advanced engineering meets production reliability.</p>
+            </div>
+            <a class="label" href="#expertise" style="padding-bottom:0.5rem;border-bottom:1px solid var(--accent)">View Expertise</a>
+          </div>
+          <div class="home-bento-editorial__grid">
+            <article class="bento-card bento-card--wide">
+              <span class="material-symbols-outlined" aria-hidden="true">rocket_launch</span>
+              <h3>Android Development</h3>
+              <p>Performance-first native apps with Kotlin, Coroutines, and Jetpack — engineered for scale.</p>
+              <span class="bento-card__link">Discover Process <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+            </article>
+            <article class="bento-card bento-card--muted">
+              <span class="material-symbols-outlined" aria-hidden="true">shield</span>
+              <h3>Real-Time Systems</h3>
+              <p>Live chat, audio/video, and streaming infrastructure battle-tested at 1M+ users.</p>
+              <div class="bento-stat"><strong>1M+</strong><span>Concurrent Users</span></div>
+            </article>
+            <article class="bento-card">
+              <span class="material-symbols-outlined" aria-hidden="true">database</span>
+              <h3>API &amp; SDK Integration</h3>
+              <p>Razorpay, Stripe, Firebase, Agora — seamless third-party infrastructure.</p>
+            </article>
+            <article class="bento-card">
+              <span class="material-symbols-outlined" aria-hidden="true">code</span>
+              <h3>Web Development</h3>
+              <p>High-performance platforms with React, Next.js, and clean architecture.</p>
+            </article>
+            <article class="bento-card">
+              <span class="material-symbols-outlined" aria-hidden="true">sync_alt</span>
+              <h3>Tech Consulting</h3>
+              <p>Architecture reviews, performance audits, and scale-ready strategy.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Methodology band (light) -->
+      <div class="methodology-band section--inverse theme-light-only">
+        <div class="container methodology-band__grid reveal">
+          <div class="methodology-band__img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr7mAbK5uimXhpo_zQ-BTIBXn5YnSP6qT4j4tyF8T8Dgcswqnrmgoum-OkZfU2eV7ZmuX3qOF_iKsD5P9Z9aD7Q5N9m4LHohnSHRcK--mQ3lgMvgRhDUeN6leKvv6kcKOZxCjtfRussKThIaNeBMb-wnGz4Gm4b1ra2_5P_Q6k70ttoKxRYH8cMlzUR1fk8Oa20np2LKCbmC2mJ63H98j3gWkGWBt2fuEFpX5HBXGgUwOa-DDdxw-uPfMWej2T-h9L3FQYY71SVd6Z" alt="Production infrastructure" />
+          </div>
+          <div>
+            <span class="label">Our Methodology</span>
+            <h2 class="headline-lg" style="margin-top:1rem;color:var(--inverse-text)">Precision At Every Scale.</h2>
+            <div class="methodology-band__steps">
+              <div class="methodology-step">
+                <h3 class="headline-md" style="color:var(--inverse-text)">01. Discovery</h3>
+                <p>Deep dive into your product vision, current stack, and scale targets.</p>
+              </div>
+              <div class="methodology-step">
+                <h3 class="headline-md" style="color:var(--inverse-text)">02. Engineering</h3>
+                <p>Rapid prototyping and rigorous development with clean architecture.</p>
+              </div>
+              <div class="methodology-step">
+                <h3 class="headline-md" style="color:var(--inverse-text)">03. Deployment</h3>
+                <p>Production releases at startup cadence — you own everything we build.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noir home CTA -->
+      <div class="home-cta-noir theme-dark-only">
+        <div class="container reveal">
+          <div class="home-cta-noir__panel">
+            <div class="home-cta-noir__ghost-icon" aria-hidden="true">
+              <span class="material-symbols-outlined">hub</span>
+            </div>
+            <h2 class="headline-lg">Ready to evolve your stack?</h2>
+            <p class="body-lg" style="max-width:32rem;margin-top:1rem">Book a free consultation via Linktree — no sales fluff, just technical engineering excellence.</p>
+            <form class="home-cta-noir__form" action="https://linktr.ee/startupspeaks" method="get" target="_blank" rel="noopener noreferrer">
+              <div class="home-cta-noir__fields">
+                <input class="input-minimal" type="text" name="name" placeholder="Name" aria-label="Name" />
+                <input class="input-minimal" type="email" name="email" placeholder="Email" aria-label="Email" />
+              </div>
+              <button class="btn btn--primary" type="submit">Book Consultation <span class="material-symbols-outlined" aria-hidden="true">calendar_today</span></button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="expertise">
-      <div class="container reveal">
-        <span class="eyebrow">Our Expertise</span>
-        <h2 class="section-title">Full-Stack Product Engineering</h2>
-        <p class="section-lead">Border-defined service cards with crimson accent states — engineered for founders who need production-grade delivery.</p>
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">📱</div>
-            <h3>Android Development</h3>
-            <p>Performance-first native apps with &lt;1s cold start times and zero-leak memory management.</p>
-            <div class="tags"><span class="tag">Kotlin</span><span class="tag">Coroutines</span><span class="tag">Jetpack</span></div>
+    <!-- EXPERTISE -->
+    <section class="section" id="expertise">
+      <!-- Noir expertise hero -->
+      <div class="expertise-hero-noir theme-dark-only">
+        <div class="container reveal">
+          <span class="expertise-badge label">Enterprise Capabilities</span>
+          <h2 class="display">Architecting the <em>Next Frontier.</em></h2>
+          <p class="body-lg" style="max-width:36rem;margin-top:1.5rem">Full-stack product engineering for founders who need production-grade delivery — Android, real-time, and scale-ready architecture.</p>
+        </div>
+      </div>
+
+      <!-- Editorial expertise hero -->
+      <div class="expertise-hero-editorial theme-light-only">
+        <div class="container reveal">
+          <div class="grid-12">
+            <div style="grid-column:span 12">
+              <span class="label">Our Expertise</span>
+              <h2 class="display" style="margin-top:1rem">Precision-Engineered Digital Solutions.</h2>
+            </div>
+            <div class="expertise-hero-editorial__lead" style="grid-column:span 12;max-width:28rem;margin-left:auto">
+              <p class="body-lg" style="margin:0">Bridging the gap between ambitious startup vision and enterprise-grade technological execution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Noir bento services -->
+      <div class="theme-dark-only" style="padding-bottom:4rem">
+        <div class="container expertise-bento reveal">
+          <article class="expertise-bento__card expertise-bento__card--8">
+            <div class="expertise-bento__inner">
+              <div>
+                <span class="material-symbols-outlined" aria-hidden="true">smartphone</span>
+                <h3 class="headline-lg">Android Development</h3>
+                <p>Performance-first native apps with &lt;1s cold start times and zero-leak memory management.</p>
+                <a class="expertise-bento__link" href="#work">Learn More <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+              </div>
+              <div class="expertise-bento__img">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYebr0ENgP3vtH3s52FzioHeuTMZrfuUMheSD2QM0PhWYnxF9FwPdyh3bn4AV7pJ-NpywLGSlhumM5TuQzea4eVlfxQ66QnfCwqIt0N9tRrgrzHGg29dYsI3zhxqpyKu5dGziYoWkDYPLHl9w7dXLtKJFMpZLk7P1QCnhuU3SkAxPn2AfRRxBkgValcjrNUPLj0aQ_zi7zNWSWLgq0IHrBe1h1P5FEZDKmHoRzlbXQPt2LYMYDU6xrb3YnH_eP2y6uwBNGDmgWEYsW" alt="Android engineering" />
+              </div>
+            </div>
           </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">⚡</div>
-            <h3>Real-Time Systems</h3>
+          <article class="expertise-bento__card expertise-bento__card--4">
+            <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
+            <h3 class="headline-md">Real-Time Systems</h3>
             <p>Low-latency audio/video and chat systems battle-tested for 1M+ concurrent users.</p>
-            <div class="tags"><span class="tag">Agora</span><span class="tag">WebRTC</span><span class="tag">WebSockets</span></div>
+            <div class="expertise-bento__footer">
+              <a class="expertise-bento__link" href="#work">Learn More <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            </div>
           </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🌐</div>
-            <h3>Web Development</h3>
-            <p>High-performance web platforms built with clean architecture and modern frameworks.</p>
-            <div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind</span></div>
+          <article class="expertise-bento__card expertise-bento__card--4">
+            <span class="material-symbols-outlined" aria-hidden="true">verified_user</span>
+            <h3 class="headline-md">MVP Development</h3>
+            <p>Wireframes to live products at startup speed without cutting engineering corners.</p>
+            <div class="expertise-bento__footer">
+              <a class="expertise-bento__link" href="#connect">Learn More <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            </div>
           </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🚀</div>
-            <h3>MVP Development</h3>
-            <p>Moving from wireframes to live products at startup speed without cutting engineering corners.</p>
-            <div class="tags"><span class="tag">Fast Delivery</span><span class="tag">Scalable</span><span class="tag">Clean Arch</span></div>
+          <article class="expertise-bento__card expertise-bento__card--8">
+            <div class="expertise-bento__inner">
+              <div class="expertise-bento__img">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXL95G3MxaFzMQeMHuq4_xZF3wixnPeNkIZIPsNwWXpabyefLQr9bLfwDvaB-HLqSnJKqnWT_Bg3gEAsqaLsM5SmX9XT0OfXCoGPn1XIQVc_TDIBlK_BTL5kIVpHVOw5MbxXMOfLBB2tJ167gRryc8Omo8l_Jdg9s3UH1ilWzOhSpbffBsDztUfFYGBiTnz6g0gQgUE4NuLGwJ-Z9UuViACKJt1KW3nItWOxikxufse032M4eqanZiOgbumGH4RRgqrneWy7J1PxFj" alt="Data and integration" />
+              </div>
+              <div>
+                <span class="material-symbols-outlined" aria-hidden="true">insights</span>
+                <h3 class="headline-lg">API &amp; SDK Integration</h3>
+                <p>Seamless implementation of payment, analytics, and social infrastructure — Razorpay, Stripe, Firebase, Agora.</p>
+                <a class="expertise-bento__link" href="#work">Learn More <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+              </div>
+            </div>
           </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🔌</div>
-            <h3>API &amp; SDK Integration</h3>
-            <p>Seamless implementation of third-party payment, analytics, and social infrastructure.</p>
-            <div class="tags"><span class="tag">Razorpay</span><span class="tag">Stripe</span><span class="tag">Firebase</span></div>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🏗️</div>
-            <h3>Tech Consulting</h3>
-            <p>Architecture reviews, performance audits, and strategy for growing engineering teams.</p>
-            <div class="tags"><span class="tag">Code Audit</span><span class="tag">MVVM</span><span class="tag">Cloud Strat</span></div>
-          </article>
+        </div>
+      </div>
+
+      <!-- Editorial expertise grid -->
+      <div class="theme-light-only" style="padding-bottom:2rem">
+        <div class="container">
+          <div class="expertise-grid-editorial reveal">
+            <article class="expertise-card-ed expertise-card-ed--7">
+              <div class="expertise-card-ed__top">
+                <span class="material-symbols-outlined" aria-hidden="true">smartphone</span>
+                <span class="expertise-card-ed__num">01</span>
+              </div>
+              <h3 class="headline-lg">Android Development</h3>
+              <p>Performance-first native apps with &lt;1s cold start times and zero-leak memory management.</p>
+              <ul class="expertise-card-ed__tags" style="margin-top:1.5rem">
+                <li>Kotlin</li>
+                <li>Coroutines</li>
+                <li>Jetpack</li>
+              </ul>
+              <span class="expertise-card-ed__line" aria-hidden="true"></span>
+            </article>
+            <div class="expertise-card-ed--5">
+              <article class="expertise-card-ed">
+                <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
+                <h3 class="headline-md">Real-Time Systems</h3>
+                <p>Live chat, Agora calling, and WebSocket infrastructure for 1M+ users.</p>
+                <span class="expertise-card-ed__line" aria-hidden="true"></span>
+              </article>
+              <article class="expertise-card-ed expertise-card-ed--dark">
+                <span class="material-symbols-outlined" aria-hidden="true">database</span>
+                <h3 class="headline-md">Web Development</h3>
+                <p>High-performance web platforms with React, Next.js, and clean architecture.</p>
+                <span class="expertise-card-ed__line" aria-hidden="true"></span>
+              </article>
+            </div>
+            <article class="expertise-card-ed expertise-card-ed--4">
+              <span class="material-symbols-outlined" aria-hidden="true">shield_lock</span>
+              <h3 class="headline-md">Tech Consulting</h3>
+              <p>Architecture reviews, performance audits, and strategy for growing engineering teams.</p>
+              <span class="expertise-card-ed__line" aria-hidden="true"></span>
+            </article>
+            <article class="expertise-card-ed expertise-card-ed--8">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTVwkykwViRnAOFdkQCvpw5PVhOYXft8CegvaMyZuhe9ILPY0aqe2aUMO-HgqVCG7w5_71-BFk93i_7ST54mJYsVyrs0a3UVc9hvaOhPay5qHoy6WK8pP1trH9Zj-kkeSyarJVhMBnZmI_p6aFDQjNdANHv_kXwLHQ1SoEXA2EZP38uThVmCw9rBzJfvxZTly17LGF3wn5a65ITYGWj4fwMTg0CIcjLaUq_xubuXNcQCFkrbOCE0j1fCdrOwZmGM-VBjWaAaJx6vwB" alt="Production engineering" />
+              <div class="expertise-card-ed__overlay">
+                <h4 class="headline-md">MVP Development</h4>
+                <p>From wireframes to live products at startup speed — scalable from day one.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="expertise-ecosystem reveal">
+            <h2 class="headline-lg">Ecosystem Capabilities</h2>
+            <div class="expertise-ecosystem__grid">
+              <div class="ecosystem-col">
+                <h4 class="label">Platform</h4>
+                <ul>
+                  <li>Android Native <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                  <li>API Engineering <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                  <li>Real-Time Chat <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                </ul>
+              </div>
+              <div class="ecosystem-col">
+                <h4 class="label">Integrations</h4>
+                <ul>
+                  <li>Agora / WebRTC <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                  <li>Razorpay / Stripe <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                  <li>Firebase <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                </ul>
+              </div>
+              <div class="ecosystem-col">
+                <h4 class="label">Growth</h4>
+                <ul>
+                  <li>Performance Scaling <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                  <li>Low-Bandwidth Optimisation <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                  <li>Code Audits <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Execution DNA (noir) -->
+      <div class="execution-dna theme-dark-only">
+        <div class="container execution-dna__grid reveal">
+          <div>
+            <h2 class="headline-lg">Our Execution DNA</h2>
+            <div style="margin-top:2.5rem">
+              <div class="execution-dna__item">
+                <span aria-hidden="true"></span>
+                <div>
+                  <h3 class="headline-md">Ship Fast</h3>
+                  <p>Startup speed without sacrificing code quality — bi-weekly production cadence.</p>
+                </div>
+              </div>
+              <div class="execution-dna__item">
+                <span aria-hidden="true"></span>
+                <div>
+                  <h3 class="headline-md">Build Right</h3>
+                  <p>Clean architecture you can scale from day one — MVVM, zero lock-in.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="execution-dna__stat">
+            <strong>4.5★</strong>
+            <span class="label label--muted">Average Play Store Rating Across Shipped Apps</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expertise CTA -->
+      <div class="expertise-cta">
+        <div class="expertise-cta__glow theme-dark-only" aria-hidden="true"></div>
+        <div class="container reveal">
+          <h2 class="display theme-dark-only">Ready to <em>Iterate?</em></h2>
+          <h2 class="display theme-light-only">Ready to evolve your stack?</h2>
+          <p class="body-lg" style="max-width:36rem;margin:1rem auto 0">Our team is ready to help you ship production-grade products.</p>
+          <div class="expertise-cta__actions">
+            <a class="btn btn--primary" href="#connect">Schedule a Consultation</a>
+            <a class="btn btn--ghost" href="#work">View Case Studies</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="work">
+    <!-- WORK -->
+    <section class="section section--band" id="work">
       <div class="container reveal">
-        <span class="eyebrow">Portfolio</span>
-        <h2 class="section-title">Built. Shipped. Scaled.</h2>
-        <p class="section-lead">Real apps, real users, real production environments. Here's what we've delivered.</p>
+        <span class="label">Portfolio</span>
+        <div class="work-header">
+          <h2 class="display" style="margin-top:1rem">Built. Shipped. Scaled.</h2>
+          <p class="body-lg">Real apps, real users, real production environments. Here's what we've delivered.</p>
+        </div>
         <div class="work-grid">
           <article class="work-card">
             <div class="work-card__thumb work-card__thumb--1">
@@ -156,7 +493,7 @@
                 <div><strong>8K+</strong><span>Reviews</span></div>
                 <div><strong>~100</strong><span>Releases</span></div>
               </div>
-              <p style="margin-top:1rem"><a class="btn btn--ghost btn--sm" href="https://play.google.com/store/apps/details?id=com.suvich.app.android" target="_blank" rel="noopener noreferrer">Play Store →</a></p>
+              <p style="margin-top:1.25rem"><a class="btn btn--ghost btn--sm" href="https://play.google.com/store/apps/details?id=com.suvich.app.android" target="_blank" rel="noopener noreferrer">Play Store <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></p>
             </div>
           </article>
           <article class="work-card">
@@ -173,7 +510,7 @@
                 <div><strong>3</strong><span>Live Apps</span></div>
                 <div><strong>20+</strong><span>APIs</span></div>
               </div>
-              <p style="margin-top:1rem"><a class="btn btn--ghost btn--sm" href="https://play.google.com/store/apps/details?id=com.astrosansaar.astrology" target="_blank" rel="noopener noreferrer">Play Store →</a></p>
+              <p style="margin-top:1.25rem"><a class="btn btn--ghost btn--sm" href="https://play.google.com/store/apps/details?id=com.astrosansaar.astrology" target="_blank" rel="noopener noreferrer">Play Store <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></p>
             </div>
           </article>
           <article class="work-card">
@@ -189,85 +526,358 @@
                 <div><strong>Live</strong><span>In Production</span></div>
                 <div><strong>2G</strong><span>Optimised</span></div>
               </div>
-              <p style="margin-top:1rem"><a class="btn btn--ghost btn--sm" href="https://play.google.com/store/apps/details?id=com.krishisuvidha.app.android" target="_blank" rel="noopener noreferrer">Play Store →</a></p>
+              <p style="margin-top:1.25rem"><a class="btn btn--ghost btn--sm" href="https://play.google.com/store/apps/details?id=com.krishisuvidha.app.android" target="_blank" rel="noopener noreferrer">Play Store <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="story">
-      <div class="container story-grid reveal">
-        <div>
-          <span class="eyebrow">Our Story</span>
-          <h2 class="section-title">Engineered for Founders.</h2>
-          <p>Startup Speaks exists to give early-stage founders access to high-end engineering expertise without the cost of a full-time senior hire.</p>
-          <p>We care about architecture, performance, and shipping products that stay maintainable six months after launch. No black boxes — you own everything we build.</p>
-          <div class="founder-card">
-            <div class="founder-card__top">
-              <div class="founder-card__avatar" aria-hidden="true">TS</div>
-              <div>
-                <strong>Tushar Saini</strong>
-                <p style="margin:0;font-size:0.85rem">Founder · Senior Android Engineer</p>
-              </div>
-            </div>
-            <blockquote>"We don't just ship code; we ship products that are ready for the next million users."</blockquote>
+    <!-- STORY -->
+    <section class="section" id="story">
+      <!-- Noir story hero -->
+      <div class="story-hero-noir theme-dark-only">
+        <div class="container story-hero-noir__grid reveal">
+          <div class="story-hero-noir__intro">
+            <span class="label label--muted">Our DNA</span>
+            <h2 class="display" style="margin-top:1rem">Beyond Code.<br /><span class="muted">Pure Humanity.</span></h2>
           </div>
-          <div class="values">
-            <div class="value"><h4>Ship Fast</h4><p>Startup speed without sacrificing code quality.</p></div>
-            <div class="value"><h4>Build Right</h4><p>Clean architecture you can scale from day one.</p></div>
-            <div class="value"><h4>No Handoffs</h4><p>You own everything — clean docs, zero lock-in.</p></div>
-            <div class="value"><h4>Scale-Ready</h4><p>Engineered for your next million users.</p></div>
+          <div class="story-hero-noir__aside">
+            <p class="body-lg">Startup Speaks exists to give early-stage founders access to high-end engineering expertise without the cost of a full-time senior hire. We care about architecture, performance, and shipping products that stay maintainable six months after launch.</p>
+            <div class="story-rule">
+              <span aria-hidden="true"></span>
+              <span class="label label--muted">Engineered for Founders — Built on Truth</span>
+            </div>
+            <div class="founder-card">
+              <div class="founder-card__top">
+                <div class="founder-card__avatar" aria-hidden="true">TS</div>
+                <div>
+                  <strong>Tushar Saini</strong>
+                  <p style="margin:0;font-size:0.85rem">Founder · Senior Android Engineer</p>
+                </div>
+              </div>
+              <blockquote>"We don't just ship code; we ship products that are ready for the next million users."</blockquote>
+            </div>
           </div>
         </div>
-        <div class="story-stats">
-          <div class="story-stat"><strong>1M+</strong><span>Users on production apps shipped by our founder</span></div>
-          <div class="story-stat"><strong>6 yrs</strong><span>Production Android engineering experience</span></div>
-          <div class="story-stat"><strong>~100</strong><span>Production releases at bi-weekly cadence</span></div>
-          <div class="story-stat"><strong>10+</strong><span>SDKs integrated across production environments</span></div>
-          <div class="story-stat"><strong>3</strong><span>Simultaneous live apps maintained in production</span></div>
+      </div>
+
+      <!-- Editorial story hero -->
+      <div class="story-bento-editorial theme-light-only">
+        <div class="container reveal">
+          <div class="grid-12" style="margin-bottom:3rem">
+            <div style="grid-column:span 12">
+              <span class="label">Establishing a New Paradigm</span>
+              <h2 class="display" style="margin-top:1rem">A narrative defined by <em>innovation</em> and precision.</h2>
+            </div>
+            <div style="grid-column:span 12;max-width:24rem;margin-left:auto">
+              <p class="body-lg expertise-hero-editorial__lead" style="border-left:2px solid var(--accent);padding-left:1.5rem;margin:0">Since inception, Startup Speaks has bridged raw entrepreneurial energy and production-grade digital architecture.</p>
+            </div>
+          </div>
+          <div class="story-bento-editorial__grid">
+            <div class="story-bento-editorial__img">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzSbD552rw_m3qTkXPhPphkKLfvXEVv30OOtA1pDUBZ2F9HMslpysz36aVtLjm-xNWOyxgVhbT-QdEEnDYyL_ugGmUCrY4Ac4WezWIeWCN4X8xbjvY8T_yk2hzbrCrxm5NJICL4HBQzA-hwKWW2DxngXrblkHK8jf7dEeaoCj9rMepDrPxf4psvecu1BsUPidUpNAs99fa6JI5DKf6SyVYW_hIqdlUTic0ng5RaeSQW7O5T1NjN8qr7d47OMpV2J1KLY23JFP4S7sc" alt="Startup Speaks editorial" />
+            </div>
+            <div class="story-bento-editorial__side">
+              <div class="story-quote-block">"WE BUILD PRODUCTS THAT SCALE."</div>
+              <div class="story-mini-card">
+                <span class="material-symbols-outlined" aria-hidden="true">diversity_3</span>
+                <p style="margin:0">A founder-led engineering practice dedicated to radical clarity and zero lock-in.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission (noir) -->
+      <div class="story-mission theme-dark-only">
+        <div class="container reveal">
+          <blockquote>"Our mission is to translate technical complexity into human opportunity."</blockquote>
+          <div class="story-mission__img">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVlnM6erXthKbjZ_0ldxjHzZTtcFmswjWnWNiQHNugpceiSKxB45zUtcc5ykTz69LMp1KSLWDfrNooTDYZ1g7VsPB5EJ0NikSM0dZraorDeKByYeDH_wxH8utcW5LvhSbcQ0pVMP8d4IhM2bu6QgG3BXfQIYAw2uLKzwkdrvxfy2NAjy-1pro_UZOcK_CLWhr6K9zxAa48thMJGkgu-lbdIF1-LDAVDIFKk3QU00sdHHea4NUA8j09l38AT7NiXoN5xc93DjLZMgxY" alt="Modern workspace" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline noir -->
+      <div class="story-timeline-noir theme-dark-only">
+        <div class="container story-timeline-noir__grid reveal">
+          <div class="story-timeline-noir__sticky">
+            <h2 class="headline-lg">The<br /><span class="muted" style="color:var(--text-variant)">Evolution.</span></h2>
+          </div>
+          <div class="story-timeline-noir__track">
+            <div class="story-timeline-noir__item">
+              <span class="story-timeline-noir__dot" aria-hidden="true"></span>
+              <span class="label label--muted">2018</span>
+              <h3 class="headline-md" style="margin:0.5rem 0 1rem">The Genesis</h3>
+              <p style="max-width:28rem;margin:0">Started as a consulting practice focused on bridging the gap between startup founders and senior Android engineering — clarity over jargon.</p>
+            </div>
+            <div class="story-timeline-noir__item">
+              <span class="story-timeline-noir__dot story-timeline-noir__dot--hollow" aria-hidden="true"></span>
+              <span class="label label--muted">2020</span>
+              <h3 class="headline-md" style="margin:0.5rem 0 1rem">Scaling Innovation</h3>
+              <p style="max-width:28rem;margin:0">Shipped Suvich from zero to 1M+ installs — live chat, Agora calling, and bi-weekly production releases at scale.</p>
+            </div>
+            <div class="story-timeline-noir__item">
+              <span class="story-timeline-noir__dot story-timeline-noir__dot--hollow" aria-hidden="true"></span>
+              <span class="label label--muted">2024</span>
+              <h3 class="headline-md" style="margin:0.5rem 0 1rem">Modern Authority</h3>
+              <p style="max-width:28rem;margin:0">Three simultaneous live apps in production — AstroSansaar ecosystem and Krishi Suvidha, optimised for rural India.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline editorial -->
+      <div class="story-timeline-editorial theme-light-only">
+        <div class="container reveal">
+          <div class="story-timeline-editorial__item">
+            <div style="text-align:right">
+              <span class="story-timeline-editorial__year">2018</span>
+              <h3 class="headline-md">The Genesis</h3>
+              <p>Startup Speaks emerged to give founders access to senior Android engineering without a full-time hire.</p>
+            </div>
+            <div class="story-timeline-editorial__icon story-timeline-editorial__icon--fill"><span class="material-symbols-outlined" aria-hidden="true">lightbulb</span></div>
+          </div>
+          <div class="story-timeline-editorial__item">
+            <div class="story-timeline-editorial__icon story-timeline-editorial__icon--outline"><span class="material-symbols-outlined" aria-hidden="true">rocket_launch</span></div>
+            <div>
+              <span class="story-timeline-editorial__year">2020</span>
+              <h3 class="headline-md">Expansion &amp; Scale</h3>
+              <p>Suvich scaled to 1M+ installs with live chat, Agora calling, and ~100 production releases.</p>
+            </div>
+          </div>
+          <div class="story-timeline-editorial__item">
+            <div style="text-align:right">
+              <span class="story-timeline-editorial__year">2023</span>
+              <h3 class="headline-md">Multi-App Production</h3>
+              <p>Three simultaneous live apps maintained — AstroSansaar ecosystem and Krishi Suvidha for rural India.</p>
+            </div>
+            <div class="story-timeline-editorial__icon story-timeline-editorial__icon--fill"><span class="material-symbols-outlined" aria-hidden="true">public</span></div>
+          </div>
+          <div class="story-timeline-editorial__item">
+            <div class="story-timeline-editorial__icon story-timeline-editorial__icon--outline"><span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span></div>
+            <div>
+              <span class="story-timeline-editorial__year">2026</span>
+              <h3 class="headline-md">Future Horizon</h3>
+              <p>Available for new projects — engineering partner for founders who need production-grade delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values noir -->
+      <div class="story-values-noir theme-dark-only">
+        <div class="container reveal">
+          <span class="label label--muted">Our Values</span>
+          <h2 class="headline-lg" style="margin:1rem 0 2.5rem">The Principles that Drive Us.</h2>
+          <div class="story-values-noir__grid">
+            <article class="value-card-noir value-card-noir--7">
+              <span class="material-symbols-outlined" aria-hidden="true">architecture</span>
+              <h3 class="headline-md">Ship Fast</h3>
+              <p>Startup speed without sacrificing code quality.</p>
+            </article>
+            <article class="value-card-noir value-card-noir--5">
+              <span class="material-symbols-outlined" aria-hidden="true">psychology</span>
+              <h3 class="headline-md">Build Right</h3>
+              <p>Clean architecture you can scale from day one.</p>
+            </article>
+            <article class="value-card-noir value-card-noir--5">
+              <span class="material-symbols-outlined" aria-hidden="true">diversity_3</span>
+              <h3 class="headline-md">No Handoffs</h3>
+              <p>You own everything — clean docs, zero lock-in.</p>
+            </article>
+            <article class="value-card-noir value-card-noir--7">
+              <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
+              <h3 class="headline-md">Scale-Ready</h3>
+              <p>Engineered for your next million users.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values editorial -->
+      <div class="story-values-editorial theme-light-only">
+        <div class="container reveal">
+          <div class="story-values-editorial__head">
+            <h2 class="display">The pillars of our philosophy.</h2>
+            <p class="story-values-editorial__tag label">Quality is not an accident; it is the result of intelligent effort.</p>
+          </div>
+          <div class="story-values-editorial__grid">
+            <div class="story-value-ed">
+              <span class="story-value-ed__num">01</span>
+              <h4 class="headline-md">Ship Fast</h4>
+              <p>Every release serves a documented purpose — startup cadence without cutting corners.</p>
+            </div>
+            <div class="story-value-ed">
+              <span class="story-value-ed__num">02</span>
+              <h4 class="headline-md">Build Right</h4>
+              <p>Clean architecture designed to be instantly understood and remarkably maintainable.</p>
+            </div>
+            <div class="story-value-ed">
+              <span class="story-value-ed__num">03</span>
+              <h4 class="headline-md">Human Edge</h4>
+              <p>Technology is a tool; empathy is our engine. We build for humans, by humans.</p>
+            </div>
+          </div>
+          <div class="story-stats-sidebar" style="margin-top:3rem">
+            <div class="story-stat"><strong>1M+</strong><span>Users on production apps shipped by our founder</span></div>
+            <div class="story-stat"><strong>6 yrs</strong><span>Production Android engineering experience</span></div>
+            <div class="story-stat"><strong>~100</strong><span>Production releases at bi-weekly cadence</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-cta">
+        <div class="container reveal">
+          <h2 class="display theme-dark-only">Let's Build the<br /><span class="muted" style="color:var(--text-variant)">Next Narrative.</span></h2>
+          <h2 class="display theme-light-only">Join our narrative.</h2>
+          <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:center">
+            <a class="btn btn--primary" href="#connect">Connect with us <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            <a class="btn btn--ghost theme-light-only" href="#work">View Our Work</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="connect">
-      <div class="container reveal">
-        <span class="eyebrow">Connect with Us</span>
-        <h2 class="section-title">Ready to Scale?</h2>
-        <p class="section-lead">Follow our journey and connect for technical insights, project updates, and a free consultation via Linktree.</p>
-        <div class="connect-layout">
-          <div class="contact-links">
-            <a class="contact-link" href="https://instagram.com/startupspeaks.official" target="_blank" rel="noopener noreferrer">
-              <span class="contact-link__icon" aria-hidden="true">📸</span>
-              <span>
-                <span class="contact-link__label">Instagram</span>
-                <span class="contact-link__value">@startupspeaks.official</span>
-              </span>
-            </a>
-            <a class="contact-link" href="https://www.linkedin.com/company/startup-speaks-official/" target="_blank" rel="noopener noreferrer">
-              <span class="contact-link__icon" aria-hidden="true">🔗</span>
-              <span>
-                <span class="contact-link__label">LinkedIn</span>
-                <span class="contact-link__value">Startup Speaks Official</span>
-              </span>
-            </a>
-            <a class="contact-link" href="https://linktr.ee/startupspeaks" target="_blank" rel="noopener noreferrer">
-              <span class="contact-link__icon" aria-hidden="true">🌿</span>
-              <span>
-                <span class="contact-link__label">Linktree · Book a Consultation</span>
-                <span class="contact-link__value">linktr.ee/startupspeaks</span>
-              </span>
-            </a>
+    <!-- CONNECT -->
+    <section id="connect">
+      <div class="connect-hero">
+        <div class="container connect-hero__grid reveal">
+          <div>
+            <span class="label theme-dark-only">Let's Connect</span>
+            <h2 class="display theme-dark-only">Architecting the <em>Next</em> Digital Frontier.</h2>
+            <h2 class="display theme-light-only" style="text-transform:uppercase">Let's build<br /><span class="accent" style="font-style:normal">what's next.</span></h2>
+            <p class="body-lg theme-dark-only" style="max-width:36rem;margin-top:1rem">Follow our journey and connect for technical insights, project updates, and a free consultation via Linktree.</p>
+            <p class="body-lg theme-light-only" style="max-width:36rem;margin-top:1rem">Reach out to discuss your next breakthrough. Book a free consultation, follow us, or explore our work.</p>
           </div>
-          <div class="qr-card">
-            <div>
-              <h3>Scan to Connect</h3>
-              <p>Point your camera at the QR code to visit our Linktree — book a free consultation, follow us, or explore our work.</p>
-              <p class="qr-card__url">linktr.ee/startupspeaks</p>
+          <div class="connect-hero__aside theme-light-only">
+            <span class="label">Linktree</span>
+            <p style="margin-top:0.75rem;color:var(--text)">linktr.ee/startupspeaks<br />Book a consultation · Follow · Explore</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="connect-main">
+        <div class="container connect-main__grid reveal">
+          <div class="connect-form">
+            <form id="contact-form" action="https://linktr.ee/startupspeaks" method="get" target="_blank" rel="noopener noreferrer">
+              <div class="connect-form__row">
+                <div class="connect-form__group">
+                  <label for="contact-name">Your Name</label>
+                  <input class="input-minimal" id="contact-name" type="text" placeholder="Your name" />
+                </div>
+                <div class="connect-form__group">
+                  <label for="contact-email">Email Address</label>
+                  <input class="input-minimal" id="contact-email" type="email" placeholder="you@startup.com" />
+                </div>
+              </div>
+              <div class="connect-form__group">
+                <label>Service Interest</label>
+                <div class="connect-chips" role="group" aria-label="Service interest">
+                  <button type="button" class="connect-chip" data-chip>Android Development</button>
+                  <button type="button" class="connect-chip" data-chip>Real-Time Systems</button>
+                  <button type="button" class="connect-chip is-active" data-chip>MVP Development</button>
+                  <button type="button" class="connect-chip" data-chip>Tech Consulting</button>
+                </div>
+              </div>
+              <div class="connect-form__group">
+                <label for="contact-message">Message</label>
+                <textarea class="input-minimal" id="contact-message" rows="4" placeholder="Tell us about your project…"></textarea>
+              </div>
+              <div class="connect-form__footer">
+                <p class="connect-form__note">By reaching out, you agree to connect via our Linktree hub for consultation booking and updates.</p>
+                <button class="btn btn--primary" type="submit">Send Inquiry <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="connect-sidebar">
+            <div class="connect-visual theme-light-only">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWvJKVCx9ypUqa6yY6qm9zAOkb127ohAcJAwmq9ZCL6cvt8Y1-kswyDFXWtOGEDdNGtu6ajKU1niawbyqHkOrC1jreBa1jwosIMOz7V3HenNheURnf1FP1LPLkM1WhoGkgWe9fvX9wiXTjictOH8eeUgKVK-MsxSjIjDF1xQqZ4341FzHjsLwzwjBDsYJMGmTsatBrIU8-IK0AXCA3GaJMVyI7pPhrcqC624vDdaMyzA1f117ASLBY-G0gfOVaey3cxcdYWOWurKfP" alt="Connect visual" />
             </div>
-            <div class="qr-card__img">
-              <img data-qr-img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&amp;data=https://linktr.ee/startupspeaks&amp;bgcolor=131313&amp;color=e60000&amp;qzone=1&amp;format=png" width="140" height="140" alt="QR code for linktr.ee/startupspeaks" />
+
+            <div class="connect-visual theme-dark-only">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeVWT1LCyswchR_FEp12stVPvPcr5J5946Tl7N6faJBbaA4_dd7Mvdk-xFz11QecE5x35se3lgCAq87QSdRP28RzcVVlg5rBXjEg833o9VJmCyfd2z3DH7DdDsOblqelEhdohmGN3G6dcRfuvav0DrK-p5ocCOigHQBp6kKXhOimGxRn-ZpWH3TDhL7glBAyfVVMvrPnK6PwQI2HpKs6xKzmibpcOlp0lyVs12Vu67PojUgPyf8vgH7-s8RoUOc4pUgaxYY0RZDX8-" alt="Connect visual" />
+              <div class="connect-visual__overlay">
+                <span class="label">Scan to Connect</span>
+                <p style="margin:0.5rem 0 0;font-size:0.9rem">Visit our Linktree to book a free consultation.</p>
+              </div>
             </div>
+
+            <div class="qr-block">
+              <div class="qr-block__inner">
+                <div>
+                  <h3 class="headline-md">Scan to Connect</h3>
+                  <p>Point your camera at the QR code to visit our Linktree — book a free consultation, follow us, or explore our work.</p>
+                  <p class="qr-block__url">linktr.ee/startupspeaks</p>
+                </div>
+                <div class="qr-block__img">
+                  <img data-qr-img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&amp;data=https://linktr.ee/startupspeaks&amp;bgcolor=131313&amp;color=e60000&amp;qzone=1&amp;format=png" width="140" height="140" alt="QR code for linktr.ee/startupspeaks" />
+                </div>
+              </div>
+            </div>
+
+            <div class="connect-links">
+              <a class="contact-link" href="https://instagram.com/startupspeaks.official" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link__icon" aria-hidden="true"><span class="material-symbols-outlined">photo_camera</span></span>
+                <span>
+                  <span class="contact-link__label">Instagram</span>
+                  <span class="contact-link__value">@startupspeaks.official</span>
+                </span>
+              </a>
+              <a class="contact-link" href="https://www.linkedin.com/company/startup-speaks-official/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link__icon" aria-hidden="true"><span class="material-symbols-outlined">link</span></span>
+                <span>
+                  <span class="contact-link__label">LinkedIn</span>
+                  <span class="contact-link__value">Startup Speaks Official</span>
+                </span>
+              </a>
+              <a class="contact-link" href="https://linktr.ee/startupspeaks" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link__icon" aria-hidden="true"><span class="material-symbols-outlined">hub</span></span>
+                <span>
+                  <span class="contact-link__label">Linktree · Book a Consultation</span>
+                  <span class="contact-link__value">linktr.ee/startupspeaks</span>
+                </span>
+              </a>
+            </div>
+
+            <div class="connect-details theme-light-only">
+              <div>
+                <h4 class="label">Quick Contact</h4>
+                <a href="https://linktr.ee/startupspeaks" target="_blank" rel="noopener noreferrer">linktr.ee/startupspeaks</a>
+              </div>
+              <div>
+                <h4 class="label">Social</h4>
+                <a href="https://instagram.com/startupspeaks.official" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.linkedin.com/company/startup-speaks-official/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="connect-map theme-light-only">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-QOmku7goOKfG438jQryurUi2gPD8bfDNbeAjGoLs_kGuzgucUkQevBLicGQneyW6hx5DBjORsfl8mte287VqEEuikVcH0ogekGd2k9xx4SQRtyRlePYO3weLuRca2RpmoGEiA7ZWNNk2azo1ZsFt2M59jnF0kOy3LRriotHm9yMIUy7J8gY0-hLkZJVtlTuDDiGqu004WSpujR7z0kPmwgBWFiq2kHKnvEaRBQg6HmRrCy7zLllnHhto4u6FJaUo5IXEM3rAK1fP" alt="" />
+              <span>Book via Linktree</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="connect-locations theme-dark-only">
+        <div class="container connect-locations__grid reveal">
+          <div class="location-card">
+            <span class="label">Connect</span>
+            <h3 class="headline-md" style="margin:0.75rem 0 0.5rem">Instagram</h3>
+            <p style="margin:0">@startupspeaks.official — project updates and insights.</p>
+          </div>
+          <div class="location-card">
+            <span class="label">Connect</span>
+            <h3 class="headline-md" style="margin:0.75rem 0 0.5rem">LinkedIn</h3>
+            <p style="margin:0">Startup Speaks Official — engineering and founder content.</p>
+          </div>
+          <div class="location-card">
+            <span class="label">Connect</span>
+            <h3 class="headline-md" style="margin:0.75rem 0 0.5rem">Linktree</h3>
+            <p style="margin:0">linktr.ee/startupspeaks — book a free consultation.</p>
           </div>
         </div>
       </div>
@@ -275,18 +885,50 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <a class="brand" href="#home">
-        <img src="assets/img/logo-mark.svg" width="32" height="32" alt="" />
-        Startup<span>Speaks</span>
-      </a>
-      <small>© 2026 Startup Speaks. Built for Performance.</small>
-      <nav aria-label="Footer">
-        <a href="#expertise">Expertise</a>
-        <a href="#work">Work</a>
-        <a href="#story">Story</a>
-        <a href="#connect">Connect</a>
-      </nav>
+    <div class="container">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="brand" href="#home">
+            <img src="assets/img/logo-mark.svg" width="28" height="28" alt="" />
+            Startup<span>Speaks</span>
+          </a>
+          <p class="theme-dark-only">Empowering founders with the engineering authority to ship products that scale.</p>
+          <p class="theme-light-only">Setting the standard for production-grade product engineering for ambitious startups.</p>
+        </div>
+        <nav class="site-footer__nav theme-light-only" aria-label="Footer">
+          <div>
+            <h5>Nav</h5>
+            <a href="#expertise">Expertise</a>
+            <a href="#work">Work</a>
+            <a href="#story">Story</a>
+          </div>
+          <div>
+            <h5>Connect</h5>
+            <a href="https://www.linkedin.com/company/startup-speaks-official/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://instagram.com/startupspeaks.official" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://linktr.ee/startupspeaks" target="_blank" rel="noopener noreferrer">Linktree</a>
+          </div>
+          <div>
+            <h5>Apps</h5>
+            <a href="https://play.google.com/store/apps/details?id=com.suvich.app.android" target="_blank" rel="noopener noreferrer">Suvich</a>
+            <a href="https://play.google.com/store/apps/details?id=com.astrosansaar.astrology" target="_blank" rel="noopener noreferrer">AstroSansaar</a>
+            <a href="https://play.google.com/store/apps/details?id=com.krishisuvidha.app.android" target="_blank" rel="noopener noreferrer">Krishi Suvidha</a>
+          </div>
+        </nav>
+        <div class="site-footer__links theme-dark-only">
+          <a href="#expertise">Expertise</a>
+          <a href="#work">Work</a>
+          <a href="#story">Story</a>
+          <a href="#connect">Connect</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <small>© 2026 Startup Speaks. Built for Performance.</small>
+        <div class="site-footer__links">
+          <a href="https://linktr.ee/startupspeaks" target="_blank" rel="noopener noreferrer">Linktree</a>
+          <a href="#home">Back to top</a>
+        </div>
+      </div>
     </div>
   </footer>
 
